@@ -12,5 +12,5 @@ if __name__=='__main__':
     if file:
         img = Image.open(file)
         st.title("Here is the image you have uploaded")
-        img.thumbnail((600,600), Image.ANTIALIAS)
+        img.thumbnail((600,500), Image.ANTIALIAS)
         st.image(img)
