@@ -13,4 +13,4 @@ if __name__=='__main__':
         img = Image.open(file)
         st.title("Here is the image you have uploaded")
         resized_image = img.thumbnail((400,400), Image.ANTIALIAS)
-        st.image(resized_image)
+        st.image(img)
