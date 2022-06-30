@@ -16,7 +16,10 @@ if __name__=='__main__':
         st.title("Here is the image you have uploaded")
         img.thumbnail((600,500), Image.ANTIALIAS)
         st.image(img)
-        # img_cv = cv2.imread(file)
-        # img_cv = cv2.cvtColor(img_cv, cv2.COLOR_BGR2RGB)
-        # length, width, size = e2e(img_cv)
-        # st.write("Length: {length} cm, width: {width} cm, size: {size}")
+        img.save("img.jpg")
+
+        # OpenCv Read
+        img_cv = cv2.imread("img.jpg")
+        img_cv = cv2.cvtColor(img_cv, cv2.COLOR_BGR2RGB)
+        length, width, size = e2e(img_cv)
+        st.write(f"Length: {round(length,1)} cm, width: {round(width,1)} cm, size: {size}")

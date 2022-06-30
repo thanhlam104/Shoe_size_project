@@ -127,7 +127,8 @@ def e2e(img):
     bbox_crop = box_detection(edge_detection(img_crop_seg))[0]
     long, width = measure_foot_size(bbox_crop, img_process)
 
-    size_map = {24.4: 40,
+    size_map = {
+                24.4: 40,
                 24.8: 40.5,
                 25.2: 41,
                 25.7: 41.5,
