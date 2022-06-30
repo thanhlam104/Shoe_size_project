@@ -17,10 +17,12 @@ if __name__=='__main__':
         img.thumbnail((600,500), Image.ANTIALIAS)
         st.image(img)
         img.save("img.jpg")
-
+        st.write("Please wait...")
         # OpenCv Read
         img_cv = cv2.imread("img.jpg")
         img_cv = cv2.cvtColor(img_cv, cv2.COLOR_BGR2RGB)
         length, width, size = e2e(img_cv)
-        st.write("Please wait...")
-        st.title(f"Your result: \nLength: {round(length,1)} cm \nWidth: {round(width,1)} cm \nSize: {size}")
+        st.title("Your result:")
+        st.write(f"Length: {round(length,1)} cm")
+        st.write(f"Width: {round(width,1)} cm")
+        st.write(f"Size: {size}")
