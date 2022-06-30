@@ -22,4 +22,5 @@ if __name__=='__main__':
         img_cv = cv2.imread("img.jpg")
         img_cv = cv2.cvtColor(img_cv, cv2.COLOR_BGR2RGB)
         length, width, size = e2e(img_cv)
-        st.write(f"Length: {round(length,1)} cm, width: {round(width,1)} cm, size: {size}")
+        st.write("Please wait...")
+        st.title(f"Your result: \nLength: {round(length,1)} cm \nWidth: {round(width,1)} cm \nSize: {size}")
