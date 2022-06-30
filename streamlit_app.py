@@ -6,7 +6,7 @@ import cv2
 
 if __name__=='__main__':
     st.title("Find your shoe size!")
-    instruction = 'Get your shoe size quickly and easily by uploading an image of your foot on a white A4 papersheet.'
+    instruction = 'Get your shoe size quickly and easily by uploading an image of your foot on a white A4 sheet of paper. For the best result, please take photo from upper view and capture the whole paper sheet.'
     st.write(instruction)
 
     file = st.file_uploader("Upload your image")
