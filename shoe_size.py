@@ -17,6 +17,6 @@ if __name__=='__main__':
         img.thumbnail((600,500), Image.ANTIALIAS)
         st.image(img)
         img_cv = cv2.imread(file)
-        img_cv = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        img_cv = cv2.cvtColor(img_cv, cv2.COLOR_BGR2RGB)
         length, width, size = e2e(img_cv)
         st.write("Length: {length} cm, width: {width} cm, size: {size}")
